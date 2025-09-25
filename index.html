@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unblocked Games X - Play Free Unblocked Games at School</title>
-    <meta name="description" content="Unblocked Games X - Play 15+ free unblocked games at school & work! No downloads needed. Subway Surfers, Minecraft, Slope & more. Safe, fast, and always updated.">
-    <meta name="keywords" content="unblocked games, free online games, school games, work games, no restrictions, gaming, entertainment">
+    <meta name="description" content="Unblocked Games X - The #1 site for unblocked games! Play 15+ free games at school, work & anywhere. Subway Surfers, Minecraft, Slope, Geometry Dash & more. No downloads, no restrictions, instant play!">
+    <meta name="keywords" content="unblocked games, unblocked games 76, unblocked games 66, play unblocked games">
     <meta name="author" content="Unblocked Games X">
     <meta name="generator" content="Unblocked Games X">
     <meta name="robots" content="index, follow">
@@ -13,7 +13,7 @@
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Unblocked Games X - Play Free Unblocked Games at School">
-    <meta property="og:description" content="Unblocked Games X - Play 15+ free unblocked games at school & work! No downloads needed. Subway Surfers, Minecraft, Slope & more. Safe, fast, and always updated.">
+    <meta property="og:description" content="Unblocked Games X - The #1 site for unblocked games! Play 15+ free games at school, work & anywhere. Subway Surfers, Minecraft, Slope, Geometry Dash & more. No downloads, no restrictions, instant play!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://unblockedgamesx.github.io/">
     <meta property="og:image" content="https://unblockedgamesx.github.io/images/og-image.jpg">
@@ -22,14 +22,17 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Unblocked Games X - Play Free Unblocked Games at School">
-    <meta name="twitter:description" content="Unblocked Games X - Play 15+ free unblocked games at school & work! No downloads needed. Subway Surfers, Minecraft, Slope & more. Safe, fast, and always updated.">
+    <meta name="twitter:description" content="Unblocked Games X - The #1 site for unblocked games! Play 15+ free games at school, work & anywhere. Subway Surfers, Minecraft, Slope, Geometry Dash & more. No downloads, no restrictions, instant play!">
     <meta name="twitter:image" content="https://unblockedgamesx.github.io/images/twitter-image.jpg">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
     
     <!-- Preload Google Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -258,11 +261,32 @@
             text-decoration: none;
             text-shadow: var(--neon-glow);
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .logo:hover {
             transform: scale(1.05);
             text-shadow: 0 0 30px var(--primary-color);
+        }
+        
+        .logo-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+        
+        .logo:hover .logo-img {
+            transform: rotate(5deg) scale(1.1);
+        }
+        
+        .logo-text {
+            font-family: 'Orbitron', monospace;
+            font-weight: 900;
+            color: var(--primary-color);
+            text-shadow: var(--neon-glow);
         }
         
         .nav-links {
@@ -273,7 +297,7 @@
         
         .nav-links a {
             text-decoration: none;
-            color: var(--text-light);
+            color: #ffffff;
             font-weight: 600;
             font-size: 1.1rem;
             position: relative;
@@ -308,6 +332,8 @@
             padding: 6rem 0;
             position: relative;
             overflow: hidden;
+            will-change: transform;
+            transform: translateZ(0);
         }
         
         .hero::before {
@@ -464,7 +490,7 @@
             border-radius: 20px;
             padding: 2rem;
             text-align: center;
-            transition: all 0.4s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: default;
             text-decoration: none;
             color: inherit;
@@ -472,6 +498,8 @@
             position: relative;
             overflow: hidden;
             backdrop-filter: blur(10px);
+            will-change: transform;
+            transform: translateZ(0);
         }
         
         .game-card::before {
@@ -489,7 +517,7 @@
         }
         
         .game-card:hover {
-            transform: translateY(-10px) scale(1.02);
+            transform: translate3d(0, -10px, 0) scale(1.02);
             border-color: var(--primary-color);
             box-shadow: 0 20px 60px rgba(0, 255, 136, 0.3);
         }
@@ -685,6 +713,17 @@
             line-height: 1.8;
         }
         
+        .article-content a {
+            color: #00ff88;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        
+        .article-content a:hover {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        
         .article-content ul {
             margin: 1.5rem 0 1.5rem 2rem;
         }
@@ -825,7 +864,10 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <a href="/" class="logo">Unblocked Games X</a>
+            <a href="/" class="logo">
+                <img src="/logo.webp" alt="Unblocked Games X Logo" class="logo-img">
+                <span class="logo-text">Unblocked Games X</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/games">All Games</a></li>
@@ -1347,23 +1389,41 @@
         `;
         document.head.appendChild(style);
 
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
+        // Throttle function to reduce forced reflow
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Optimized parallax effect for hero section
+        const heroParallax = throttle(() => {
             const scrolled = window.pageYOffset;
             const hero = document.querySelector('.hero');
             if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                hero.style.transform = `translate3d(0, ${scrolled * 0.5}px, 0)`;
             }
-        });
+        }, 16); // ~60fps
 
-        // Dynamic background color change based on scroll
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', heroParallax);
+
+        // Optimized dynamic background color change based on scroll
+        const backgroundChange = throttle(() => {
             const scrolled = window.pageYOffset;
             const maxScroll = document.body.scrollHeight - window.innerHeight;
             const scrollPercent = scrolled / maxScroll;
             
             document.body.style.setProperty('--scroll-percent', scrollPercent);
-        });
+        }, 16); // ~60fps
+
+        window.addEventListener('scroll', backgroundChange);
 
         // Add typing effect to hero title
         function typeWriter(element, text, speed = 100) {
@@ -1390,8 +1450,8 @@
             }
         });
 
-        // Add glow effect to navigation on scroll
-        window.addEventListener('scroll', () => {
+        // Optimized glow effect to navigation on scroll
+        const headerGlow = throttle(() => {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
                 header.style.boxShadow = '0 0 50px rgba(0, 255, 136, 0.3)';
@@ -1400,7 +1460,9 @@
                 header.style.boxShadow = '0 0 30px rgba(0, 255, 136, 0.1)';
                 header.style.borderBottomColor = 'rgba(0, 255, 136, 0.2)';
             }
-        });
+        }, 16); // ~60fps
+
+        window.addEventListener('scroll', headerGlow);
 
         // Add sound effects (optional - can be enabled/disabled)
         function playClickSound() {
